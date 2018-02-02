@@ -135,9 +135,9 @@ class App extends Component {
     ]
 
     const updatedStackedChartData = [
-      { name: 'QA-A', QAA: 4490, QAC: 4300, QAH: 2250 },
-      { name: 'QA-C', QAA: 1590, QAC: 8000, QAH: 4600 },
-      { name: 'QA-H', QAA: 5490, QAC: 2300, QAH: 1600 },
+      { name: 'QA-A', throughput: 4490, latency: 4300 },
+      { name: 'QA-C', throughput: 1590, latency: 8000 },
+      { name: 'QA-H', throughput: 5490, latency: 2300 },
     ];
 
     const updatedTableData = [
