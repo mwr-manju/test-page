@@ -16,9 +16,9 @@ class SimpleLineChart extends React.Component{
         <CartesianGrid strokeDasharray="1 1" />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="QAC" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="QAA" stroke="#82ca9d" />
-        <Line type="monotone" dataKey="QAH" stroke="#800000" />
+        <Line type="monotone" dataKey="QAC" stroke="#8CC152" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="QAA" stroke="#F6BB42" />
+        <Line type="monotone" dataKey="QAH" stroke="#E9573F" />
       </LineChart>
     );
   }
@@ -34,8 +34,8 @@ class StackedBarChart extends React.Component{
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="throughput" stackId="a" fill="#8884d8" />
-        <Bar dataKey="latency" stackId="a" fill="#82ca9d" />
+        <Bar dataKey="throughput" stackId="a" fill="#D770AD" />
+        <Bar dataKey="latency" stackId="a" fill="#967ADC" />
       </BarChart>
     );
   }
