@@ -34,8 +34,8 @@ class StackedBarChart extends React.Component{
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="QAA" stackId="a" fill="#8884d8" />
-        <Bar dataKey="QAC" stackId="a" fill="#82ca9d" />
+        <Bar dataKey="throughput" stackId="a" fill="#8884d8" />
+        <Bar dataKey="latency" stackId="a" fill="#82ca9d" />
       </BarChart>
     );
   }
@@ -60,9 +60,9 @@ class App extends Component {
         { name: '12:11:00', QAA: 3490, QAC: 4300, QAH: 5846 },
       ],
       stackedChartData: [
-        { name: 'QA-A', QAA: 4000, QAC: 2400, QAH: 2400 },
-        { name: 'QA-C', QAA: 3000, QAC: 1398, QAH: 2210 },
-        { name: 'QA-H', QAA: 2000, QAC: 9800, QAH: 2290 },
+        { name: 'QA-A', throughput: 4000, latency: 2400 },
+        { name: 'QA-C', throughput: 3000, latency: 1398 },
+        { name: 'QA-H', throughput: 2000, latency: 9800 },
       ],
       tableData: [
         { component: 'QA-A', data: '4500 MB' },
